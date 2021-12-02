@@ -7,7 +7,7 @@ import {EyeOutlined, DeleteOutlined, EditOutlined} from "@ant-design/icons"
 import allavailabletours from"../../assets/constants/tours.json"
 import Usersinformation from"../../assets/constants/information.json"
 
-
+<h1>All Tours</h1>
     const column = [
         {
             title:"Title",
@@ -103,7 +103,9 @@ const column2 = [
 const Alltours = () => {
     return (
         <>
+        <h1 style={{textAlign:"center"}}>All Tours</h1>
     <Table columns={column} dataSource={allavailabletours}/>
+    <h1  style={{textAlign:"center"}}>All Users</h1>
       <Table columns={column2}dataSource={Usersinformation}/>
     </>
 

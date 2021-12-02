@@ -1,5 +1,8 @@
 import React from "react";
+
 const Singletour=({tour})=>{
+
+
     return(
         <div className="Singletour-container">
     <h1>{tour.title}</h1>

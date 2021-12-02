@@ -10,7 +10,8 @@ const Header = () => {
     // const[form]=Form.useForm();
 
     const onFinish = (values) => {
-        console.log(values);
+        console.log(values); localStorage.setItem("userLogedIn", true);
+        navigate("/dash/newtour")
     }
     const navigate = useNavigate();
 
@@ -18,7 +19,7 @@ const Header = () => {
         <>
             <Modal
                 visible={Visible}
-                width="30%"
+                width="30%" 
                 margin-top="60px"
                 onOk={() => setVisible(false)}
                 onCancel={() => setVisible(false)}>
@@ -31,8 +32,7 @@ const Header = () => {
                     </Form.Item>
 
                     <Button htmlType="submit" onClick={() => {
-                        localStorage.setItem("userLogedIn", true);
-                        navigate("/dash/newtour")
+                       
 
                     }}>Log in</Button>
 
@@ -50,12 +50,12 @@ const Header = () => {
                     <a href="home">Home</a>
                     <a href="about">About us</a>
 
-                    <a href="garelly">Garelly</a>
+                    {/* <a href="garelly">Garelly</a> */}
                     <a href="tours">Tours</a>
 
 
                     <a href="contactus">Contact us</a>
-                    <a href="login">Log in</a>
+                    {/* <a href="login">Log in</a> */}
                     <a href="dash/newtour">New Tours </a>
                     <a href="#" onClick={() => setVisible(true)}>Sign in</a>
 
