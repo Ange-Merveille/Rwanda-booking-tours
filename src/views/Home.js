@@ -21,8 +21,12 @@ const Home=()=>{
                      as a first-class tourism destination. 
                      
                      In Rwanda every sunset is a sunshine!! </p>
-            </div>
-            <div className="button-form"></div>
+          
+            <div  className="button-form">
+
+         <button style={{marginLeft:"25%",width:"50%",borderRadius:"20px"}} className="button"htmlType="submit"> <a href="/tours">Booking Now</a></button>
+         </div>
+         </div>
         </Homelayout>
   
     </div>)
